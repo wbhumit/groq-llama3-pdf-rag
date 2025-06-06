@@ -120,3 +120,14 @@ if selected == "About":
     with st.expander("Whom to contact regarding this app?"):
         st.markdown(''' Contact [Sree Narayanan](sreeaadhi07@gmail.com)
         ''')
+
+if __name__ == "__main__":
+    import os
+    import subprocess
+
+    port = os.environ.get("PORT", 8501)  # fallback to 8501 if PORT not set
+    subprocess.run([
+        "streamlit", "run", "main.py",
+        "--server.port", str(port),
+        "--server.address", "0.0.0.0"
+    ])
