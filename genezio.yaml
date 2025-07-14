@@ -8,6 +8,6 @@ backend:
     language:
         name: js
     path: ./
-name: groq-llama3-pdf-rag
+name: groq-llama3-pdf-rag-test
 region: us-east-1
 yamlVersion: 2
